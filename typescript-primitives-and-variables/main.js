@@ -1,0 +1,18 @@
+'use strict';
+const fullName = 'Jimmy Tran';
+console.log('Full name ' + fullName);
+console.log('Type of fullName ' + typeof fullName);
+const isCool = true;
+console.log('Is Cool? ' + isCool);
+console.log('Type of isCool? ' + typeof isCool);
+const totalPets = 2;
+console.log('Total number of pets: ' + totalPets);
+console.log('Type of totalPets: ' + typeof totalPets);
+const empty = null;
+console.log('value of empty: ' + empty);
+console.log('type of empty: ' + typeof empty);
+let nothing;
+console.log('value of nothing: ' + nothing);
+console.log('type of nothing: ' + typeof nothing);
+const authorOne = { name: 'Mario', age: 11 };
+console.log(typeof authorOne);
