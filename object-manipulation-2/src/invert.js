@@ -1,6 +1,7 @@
+'use strict';
 /* exported invert */
-function invert(source: Record<string, any>): Record<string, any> {
-  const res: Record<string, any> = {};
+function invert(source) {
+  const res = {};
   for (const key in source) {
     const resKey = '' + source[key];
     const resValue = key;

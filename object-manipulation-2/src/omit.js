@@ -1,6 +1,7 @@
+'use strict';
 /* exported omit */
-function omit(source: Record<string, any>, keys: string): Record<string, any> {
-  const res: Record<string, any> = {};
+function omit(source, keys) {
+  const res = {};
   for (const key in source) {
     if (!keys.includes(key)) {
       res[key] = source[key];
