@@ -1,6 +1,7 @@
+'use strict';
 /* exported compact */
-function compact(array: any[]): any[] {
-  const res: any[] = [];
+function compact(array) {
+  const res = [];
   for (const e of array) {
     if (e) res.push(e);
   }

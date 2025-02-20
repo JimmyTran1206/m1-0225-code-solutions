@@ -1,4 +1,5 @@
+'use strict';
 /* exported last */
-function last(array: any[]): any {
+function last(array) {
   return array[array.length - 1];
 }
