@@ -1,6 +1,7 @@
+'use strict';
 /* exported isUpperCased */
-function isUpperCased(word: string): boolean {
-  const wordArr: string[] = word.split('');
+function isUpperCased(word) {
+  const wordArr = word.split('');
   for (const e of wordArr) {
     if (e !== e.toUpperCase()) {
       return false;

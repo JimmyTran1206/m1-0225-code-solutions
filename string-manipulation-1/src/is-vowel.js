@@ -1,5 +1,6 @@
+'use strict';
 /* exported isVowel */
-function isVowel(char: string): boolean {
+function isVowel(char) {
   if (char.length > 1) return false;
   const vowelArr = ['a', 'i', 'o', 'u', 'e'];
   for (const e of vowelArr) {

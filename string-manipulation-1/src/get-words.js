@@ -1,4 +1,5 @@
+'use strict';
 /* exported getWords */
-function getWords(str: string): string[] {
+function getWords(str) {
   return str.length === 0 ? [] : str.split(' ');
 }

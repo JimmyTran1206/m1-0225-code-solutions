@@ -1,6 +1,7 @@
+'use strict';
 /* exported reverseWord */
-function reverseWord(word: string): string {
-  let res: string = '';
+function reverseWord(word) {
+  let res = '';
   for (let i = word.length - 1; i >= 0; i--) {
     res += word[i];
   }
