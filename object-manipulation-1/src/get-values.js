@@ -1,6 +1,7 @@
+'use strict';
 /* exported getValues */
-function getValues(object: Record<string, any>): any[] {
-  const values: any[] = [];
+function getValues(object) {
+  const values = [];
   for (const key in object) {
     values.push(object[key]);
   }
