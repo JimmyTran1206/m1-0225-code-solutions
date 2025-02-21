@@ -1,31 +1,10 @@
-interface StudentProps {
-  firstName: string;
-  lastName: string;
-  age: number;
-  livesInIrvine?: boolean;
-  previousOccupation?: string;
-}
-
-interface Vehicle {
-  make: string;
-  model: string;
-  year: number;
-  color?: string;
-  isConvertible?: boolean;
-}
-
-interface Pet {
-  name?: string;
-  kind?: string;
-}
-
-const student: StudentProps = {
+'use strict';
+const student = {
   firstName: 'Jimmy',
   lastName: 'Tran',
   age: 37,
 };
-
-const fullName: string = student.firstName + ' ' + student.lastName;
+const fullName = student.firstName + ' ' + student.lastName;
 console.log('Full Name: ' + fullName);
 student.livesInIrvine = false;
 console.log('Live in Irvine: ' + student.livesInIrvine);
@@ -33,8 +12,7 @@ student.previousOccupation = 'Military';
 console.log('Previous Occupation' + student.previousOccupation);
 console.log('Student object:', student);
 console.log('Type of student: ' + typeof student);
-
-const vehicle: Vehicle = {
+const vehicle = {
   make: 'Toyota',
   model: 'Highlander',
   year: 2013,
@@ -46,12 +24,10 @@ console.log('Vehicle is convertible: ' + vehicle['isConvertible']);
 console.log('Vehicle object: ', vehicle);
 console.log();
 console.log('Type of vehicle:  ' + typeof vehicle);
-
-const pet: Pet = {
+const pet = {
   name: 'Kona',
   kind: 'Golden Retriever',
 };
-
 delete pet.name;
 delete pet.kind;
 console.log('pet object:', pet);
