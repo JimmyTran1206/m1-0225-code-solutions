@@ -6,15 +6,26 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What are arrays used for?
 
+  > Organizing data in order, providing reusability, iteration, and flexibility
+
 - Describe array literal notation.
+
+  > use square brackets `[]`
 
 - How are arrays different from "plain" objects?
 
+  > array is ordered, and is accessed via indices. Objects are unordered, and is accessed via properties.
+
 - What number represents the first index of an array?
+
+  > array indices start from 0
 
 - What is the `length` property of an array?
 
+  > `length` holds the total numbers of elements in an array.
+
 - How do you calculate the last index of an array?
+  > `array.lenght -1`
 
 ## Notes
 
