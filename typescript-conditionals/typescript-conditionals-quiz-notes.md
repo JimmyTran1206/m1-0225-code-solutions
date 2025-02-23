@@ -34,6 +34,7 @@ Answer the following questions in the provided markdown file before turning in t
 - Is a `default` clause required in order to use a `switch` statement?
   > Nope, the `default` clause is optional.
 
+
 ## Notes
 
 All student notes should be written here.

@@ -8,6 +8,7 @@
             introduceWarnerBro,
             recommendMovie
  */
+
 function isUnderFive(num: number): boolean {
   return num < 5;
 }
@@ -76,3 +77,4 @@ function recommendMovie(genre: string): string {
       return 'Genre not recognized. Choose between action, comedy, horror, drama, musical, or sci-fi';
   }
 }
+
