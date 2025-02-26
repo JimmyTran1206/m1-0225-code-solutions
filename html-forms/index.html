@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="width: 60%; max-width: 600px; margin: 0 auto">
+      <h1>Coding Form!</h1>
+      <form action="#" method="POST">
+        <div>
+          <div><label for="email"></label>Email</div>
+          <div><input type="email" name="email" id="email" /></div>
+        </div>
+
+        <div>
+          <div><label for="select">Why is coding cool?</label></div>
+          <div>
+            <select name="selection" id="select">
+              <option value="not choosing" selected>Select an option</option>
+              <option value="interesting">Because it's interesting</option>
+              <option value="fun">Because it's fun</option>
+              <option value="powerful">Because it's powerful</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <div style="margin: 10px 0">Favorite Language (Choose one)</div>
+          <div>
+            <label><input type="radio" name="lang" id="html" />HTML</label>
+            <label><input type="radio" name="lang" id="css" />CSS</label>
+            <label><input type="radio" name="lang" id="js" />JavaScript</label>
+          </div>
+        </div>
+
+        <div>
+          <div style="margin: 10px 0">
+            Would you like to sign up for more information?
+          </div>
+          <div>
+            <input type="checkbox" name="chk" id="chkBox" /><label for="chkBox">
+              Sign me up!</label
+            >
+          </div>
+        </div>
+
+        <div>
+          <div>Comments</div>
+          <div>
+            <textarea
+              name="txtCommnet"
+              id="txtArea"
+              rows="8"
+              cols="35"></textarea>
+          </div>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
