@@ -6,9 +6,14 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What HTML tag is used to link to another website?
 
+  > The anchor tag `<a>`
+
 - What is an absolute URL?
 
+  > The full path to a website/ resource
+
 - What is a relative URL?
+  > the path relative to the current location of the site
 
 ## Notes
 
