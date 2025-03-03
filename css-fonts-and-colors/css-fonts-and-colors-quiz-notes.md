@@ -6,9 +6,14 @@ Answer the following questions in the provided markdown file before turning in t
 
 - Name two types of units that can be used to adjust `font-size` in CSS.
 
+  > `px` and `em` and `rem`
+
 - What CSS property controls the font used for the text inside an element?
 
+  > `font` and related `font` properties
+
 - Name three different types of values you can use to specify colors in CSS.
+  > Hex, RGB, RGBA, HSL, HSLA
 
 ## Notes
 
