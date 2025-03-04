@@ -6,9 +6,14 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What CSS properties make up the box model?
 
+  > `width`,`height`, `padding`, `border`, `margin`
+
 - Which CSS property pushes boxes away from each other?
 
+  > `margin`
+
 - Which CSS property add space between a box's content and its border?
+  > `padding`
 
 ## Notes
 
