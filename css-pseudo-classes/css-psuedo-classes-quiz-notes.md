@@ -6,7 +6,10 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is a pseudo-class?
 
+  > CSS rule target state of an element
+
 - What are CSS pseudo-classes useful for?
+  > To make interactive UI components more dynamic and visually appealing, most of the time "wow" the user without using JavaScript
 
 ## Notes
 
