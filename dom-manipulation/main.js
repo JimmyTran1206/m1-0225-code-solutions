@@ -1,3 +1,4 @@
+'use strict';
 let click = 0;
 const $button = document.querySelector('.hot-button');
 const $clickCount = document.querySelector('.click-count');
