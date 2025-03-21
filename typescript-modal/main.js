@@ -1,3 +1,4 @@
+'use strict';
 const $openModelBtn = document.querySelector('.open-modal');
 const $dismissModalBtn = document.querySelector('.dismiss-modal');
 const $dialog = document.querySelector('dialog');
