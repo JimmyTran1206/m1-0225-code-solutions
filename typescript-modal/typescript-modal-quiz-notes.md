@@ -17,7 +17,7 @@ Answer the following questions in the provided markdown file before turning in t
   > use the `close()` method on dialog element
 
 - What is the difference between the `showModal` & `show` methods?
-  > default view of the dialog is hidden from normal flow. Method `showModel` allow the model to display on top of other elements, and blocks the interaction with other elements. Method `show()` allow the model to display in the normal flow as other elements
+  > default view of the dialog is hidden from normal flow. Method `showModel` allow the model to display on top of other elements, and blocks the interaction with other elements. Method `show()` allow the model to display in the normal flow as other elements, and does not block interactions with other elements.
 
 ## Notes
 
