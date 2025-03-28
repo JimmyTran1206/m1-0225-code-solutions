@@ -36,8 +36,5 @@ document.addEventListener('keydown', (event: Event) => {
     characters[i].classList.remove('default-border');
     characters[i].classList.add('wrong-word');
     characters[i].classList.add('jump');
-    setTimeout(() => {
-      characters[i].classList.remove('jump');
-    }, 100);
   }
 });
