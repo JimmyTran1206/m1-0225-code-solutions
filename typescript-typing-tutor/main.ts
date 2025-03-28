@@ -30,11 +30,13 @@ document.addEventListener('keydown', (event: Event) => {
       const $successMessage = document.createElement('p');
       $successMessage.textContent = 'Good job, you did it!';
       $text.appendChild($successMessage);
-      setTimeout(() => alert('good job!'), 100);
     }
   } else {
     characters[i].classList.remove('default-border');
     characters[i].classList.add('wrong-word');
     characters[i].classList.add('jump');
+    setTimeout(() => {
+      characters[i].classList.remove('jump');
+    }, 100);
   }
 });

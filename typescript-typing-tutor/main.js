@@ -27,7 +27,6 @@ document.addEventListener('keydown', (event) => {
       const $successMessage = document.createElement('p');
       $successMessage.textContent = 'Good job, you did it!';
       $text.appendChild($successMessage);
-      setTimeout(() => alert('good job!'), 100);
     }
   } else {
     characters[i].classList.remove('default-border');
