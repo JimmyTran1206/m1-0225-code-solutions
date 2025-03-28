@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fef9f1;
+}
+
+.bulb {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: #faea84;
+  position: relative;
+}
+
+.bulb:hover {
+  cursor: pointer;
+}
+
+.bulb:active {
+  top: 1%;
+}
+
+.dark {
+  background-color: #111;
+}
+
+.off {
+  background-color: #252525;
+}
