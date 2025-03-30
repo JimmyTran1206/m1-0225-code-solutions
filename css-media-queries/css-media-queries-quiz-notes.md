@@ -6,7 +6,11 @@ Answer the following questions in the provided markdown file before turning in t
 
 - Give two examples of media features that you can query in an `@media` rule.
 
+  > `all`, `print`, `screen`, and `speech`
+
 - Which HTML meta tag is used in mobile-responsive web pages?
+
+> The viewport meta: `<meta name="viewport" content="width=device-width, initial-scale=1" />`
 
 ## Notes
 
