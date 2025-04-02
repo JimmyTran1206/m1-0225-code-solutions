@@ -6,11 +6,18 @@ Answer the following questions in the provided markdown file before turning in t
 
 - How do you store data in `localStorage`?
 
+  > use method `setItem()`
+
 - How do you retrieve data from `localStorage`?
+
+  > use method `getItem()`
 
 - What data type can `localStorage` save in the browser?
 
+  > string only
+
 - When is the safest time to store user data?
+  > after users make changes to the data
 
 ## Notes
 

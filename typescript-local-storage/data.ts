@@ -5,4 +5,14 @@ interface Todo {
   isCompleted: boolean;
 }
 
-let todos: Todo[] = [];
+let todos: Todo[] = readTodos();
+
+function writeTodos(): void {
+  const todosJSON = JSON.stringify(todos);
+  localStorage.setItem('todos-storage', todosJSON);
+}
+
+function readTodos(): Todo[] {
+  const todosString: string | null = localStorage.getItem('todos-storage');
+  return todosString ? (JSON.parse(todosString) as Todo[]) : [];
+}
