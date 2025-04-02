@@ -1,10 +1,5 @@
-interface Book {
-  isbn: string;
-  title: string;
-  author: string;
-}
-
-const books: Book[] = [
+'use strict';
+const books = [
   {
     isbn: '978-1491951989',
     title: 'JavaScript: The Definitive Guide',
@@ -21,19 +16,16 @@ const books: Book[] = [
     author: 'Harper Lee',
   },
 ];
-
-const jsonBooks: string = JSON.stringify(books);
+const jsonBooks = JSON.stringify(books);
 console.log(
   'json string: ' + jsonBooks,
   'type of json string: ' + typeof jsonBooks
 );
-
-const jsonStudent: string = '{"id": 123456, "name": "John Doe"}';
+const jsonStudent = '{"id": 123456, "name": "John Doe"}';
 console.log(
   'json string: ' + jsonStudent,
   'type of json string: ' + typeof jsonStudent
 );
-
 const student = JSON.parse(jsonStudent);
 console.log('student: ', student);
 const bookArr = JSON.parse(jsonBooks);
