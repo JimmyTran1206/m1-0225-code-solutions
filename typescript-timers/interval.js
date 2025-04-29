@@ -1,6 +1,7 @@
+'use strict';
 const $countDown = document.querySelector('.countdown-display');
 if (!$countDown) throw new Error('cannot find count-down element');
-let count: number = Number.parseInt($countDown.textContent!);
+let count = Number.parseInt($countDown.textContent);
 const intervalId = setInterval(() => {
   if (count === 1) {
     $countDown.textContent = '~Earth Beeeelooowww Us~';
