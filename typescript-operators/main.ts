@@ -23,17 +23,13 @@ const v5: Customer = {
   },
 };
 
-if (true && v1) {
-  console.log('v1 is truthy');
-}
+v1 && console.log('v1 is truthy');
 
-if (true && v2) {
-  console.log('v2 is truthy');
-}
+v2 && console.log('v2 is truthy');
 
-const config1: string = false || v1 ? 'default-value' : '';
+const config1 = v1 || 'default-value';
 console.log('config1: ', config1);
-const config2: string = false || v2 ? 'default-value' : '';
+const config2 = v2 || 'default-value';
 console.log('config2: ', config2);
 
 const cfg1: string | any = v1 ?? 'default-value';
