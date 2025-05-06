@@ -10,15 +10,11 @@ const v5 = {
     age: 82,
   },
 };
-if (true && v1) {
-  console.log('v1 is truthy');
-}
-if (true && v2) {
-  console.log('v2 is truthy');
-}
-const config1 = false || v1 ? 'default-value' : '';
+v1 && console.log('v1 is truthy');
+v2 && console.log('v2 is truthy');
+const config1 = v1 || 'default-value';
 console.log('config1: ', config1);
-const config2 = false || v2 ? 'default-value' : '';
+const config2 = v2 || 'default-value';
 console.log('config2: ', config2);
 const cfg1 = v1 ?? 'default-value';
 console.log(`cfg1: `, cfg1);
