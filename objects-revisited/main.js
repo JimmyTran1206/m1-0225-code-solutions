@@ -1,22 +1,5 @@
-interface Employee {
-  position: string;
-  daysOfWeekWorking: string[];
-  fullTime?: boolean;
-}
-
-interface User {
-  name: string;
-}
-
-interface Business {
-  opens: string;
-  closes: string;
-  totalEmployees: number;
-  daysOpen: string[];
-  employees: { [employeeName: string]: Employee };
-}
-
-const business: Business = {
+'use strict';
+const business = {
   opens: '9am',
   closes: '5pm',
   totalEmployees: 4,
@@ -40,14 +23,12 @@ const business: Business = {
     },
   },
 };
-
 // helper functions
 // create random workdays with random length
-function randomWorkDayInclWeekend(): string[] {
-  const daysOfWorkingWeek: string[] = ['M', 'T', 'W', 'Th', 'F'];
-  const workingWeekLength: number = Math.floor(Math.random() * 5 + 1);
-  const employeeWorkdays: string[] = [];
-
+function randomWorkDayInclWeekend() {
+  const daysOfWorkingWeek = ['M', 'T', 'W', 'Th', 'F'];
+  const workingWeekLength = Math.floor(Math.random() * 5 + 1);
+  const employeeWorkdays = [];
   // fill up the elements of employeeWorkdays
   for (let i = 0; i < workingWeekLength; i++) {
     const index = Math.floor(Math.random() * 5);
@@ -64,28 +45,20 @@ function randomWorkDayInclWeekend(): string[] {
   employeeWorkdays.push('Sa', 'S');
   return employeeWorkdays;
 }
-
 // create a new employee
-function createNewEmployee(
-  business: Business,
-  name: string,
-  position: string,
-  daysOfWeekWorking: string[]
-): void {
-  const fullTime: boolean = daysOfWeekWorking.length >= 5;
+function createNewEmployee(business, name, position, daysOfWeekWorking) {
+  const fullTime = daysOfWeekWorking.length >= 5;
   business.employees[name] = { position, daysOfWeekWorking, fullTime };
 }
-
 // add fullTime property to all employees
-function addFullTimeProp(business: Business): void {
+function addFullTimeProp(business) {
   for (const name in business.employees) {
     business.employees[name].fullTime =
       business.employees[name].daysOfWeekWorking.length >= 5;
   }
 }
-
 // Task 1: add weekend
-function addWeekend(business: Business): void {
+function addWeekend(business) {
   business.daysOpen.push('Sa', 'S');
   for (const employee in business.employees) {
     if (!business.employees[employee].daysOfWeekWorking.includes('Sa'))
@@ -94,13 +67,12 @@ function addWeekend(business: Business): void {
       business.employees[employee].daysOfWeekWorking.push('S');
   }
 }
-
 // Task 2: addEmployee
-async function addEmployees(business: Business): Promise<void> {
+async function addEmployees(business) {
   try {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     if (!res.ok) throw new Error(`HTTP Error Status: ${res.status} `);
-    const data = (await res.json()) as User[];
+    const data = await res.json();
     // adding 4 new employees
     createNewEmployee(
       business,
@@ -126,16 +98,14 @@ async function addEmployees(business: Business): Promise<void> {
       'Network Admin',
       randomWorkDayInclWeekend()
     );
-
     // Update the total employees
     business.totalEmployees = Object.keys(business.employees).length;
   } catch (error) {
     console.log('HTTP connection error: ', error);
   }
 }
-
 // task 3: delete employee
-function deleteEmployee(business: Business, employeeName: string): void {
+function deleteEmployee(business, employeeName) {
   for (const name in business.employees) {
     if (name === employeeName) {
       delete business.employees[name];
@@ -144,7 +114,6 @@ function deleteEmployee(business: Business, employeeName: string): void {
   // Update the total employees
   business.totalEmployees = Object.keys(business.employees).length;
 }
-
 document.addEventListener('DOMContentLoaded', async () => {
   addWeekend(business);
   addFullTimeProp(business);
