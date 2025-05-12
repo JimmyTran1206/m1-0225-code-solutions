@@ -66,8 +66,8 @@ async function throwChained(): Promise<void> {
 // catching async errors, using top-level await
 try {
   await throwOnce()
-    .then(() => throwSeveral())
-    .then(() => throwChained());
+    .then(async () => await throwSeveral())
+    .then(async () => await throwChained());
 } catch (error) {
   console.log(elapsed(), `Error: `, error);
 }
